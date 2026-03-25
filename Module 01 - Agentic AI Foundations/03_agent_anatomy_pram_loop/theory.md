@@ -6,19 +6,7 @@
 
 ## 3.1 The PRAM Loop
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    THE PRAM LOOP                        │
-│                                                         │
-│   ┌──────────┐     ┌──────────┐     ┌──────────┐       │
-│   │PERCEPTION│────▶│REASONING │────▶│  ACTION  │       │
-│   └──────────┘     └──────────┘     └─────┬────┘       │
-│         ▲                                 │             │
-│         │         ┌──────────┐            │             │
-│         └─────────│  MEMORY  │◀───────────┘             │
-│                   └──────────┘                          │
-└─────────────────────────────────────────────────────────┘
-```
+![The PRAM Loop](./images/pram_loop.png)
 
 The agent loop runs continuously until a **termination condition** is met:
 - Goal achieved
@@ -176,33 +164,7 @@ The agent's ability to **store and retrieve information** across time — within
 
 ## 3.6 Complete Anatomy Diagram
 
-```
-┌───────────────────────────────────────────────────────────────┐
-│                      AI AGENT ANATOMY                        │
-│                                                               │
-│  INPUT LAYER                    REASONING ENGINE              │
-│  ─────────────                  ─────────────────────────     │
-│  • User message  ──────────►    • System Prompt (persona)     │
-│  • Tool results  ──────────►    • Context Window              │
-│  • Retrieved mem ──────────►    • LLM (GPT-4o, Claude, etc.) │
-│  • Environment   ──────────►    • Chain-of-Thought scratchpad │
-│                                 • Structured output parser    │
-│                                           │                   │
-│                                           ▼                   │
-│  OUTPUT LAYER                   TOOL EXECUTION LAYER          │
-│  ────────────                   ──────────────────────        │
-│  • Final answer  ◄──────────    • Tool registry               │
-│  • Streamed text ◄──────────    • Tool dispatcher            │
-│                                 • Result parser               │
-│                                           │                   │
-│                                           ▼                   │
-│  MEMORY LAYER                                                 │
-│  ─────────────                                                │
-│  • STM: conversation buffer (in-context)                      │
-│  • LTM: vector store, SQL DB, knowledge graph                 │
-│  • Checkpointing: save state → resume later                   │
-└───────────────────────────────────────────────────────────────┘
-```
+![Complete Agent Anatomy](./images/agent_anatomy.png)
 
 ---
 

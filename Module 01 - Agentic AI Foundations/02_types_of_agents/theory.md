@@ -6,17 +6,7 @@
 
 ## 2.1 The Agent Taxonomy
 
-```
-                        AI Agents
-                           │
-         ┌─────────────────┼─────────────────┐
-    Simple Reflex     Model-Based         Goal-Based
-                           │
-                    ┌──────┴──────┐
-               Utility-Based   Learning
-                                   │
-                            Hierarchical / Multi-Agent
-```
+![Agent Taxonomy](./images/agent_taxonomy.png)
 
 ---
 
@@ -193,14 +183,7 @@ Experience → Critic → Learning Element → Updated Policy → Better Actions
 ### What It Is
 Multiple agents organized in a **hierarchy** where high-level agents manage and delegate to lower-level agents.
 
-```
-           ┌────────────────────┐
-           │  Manager Agent     │  (high-level goal setting)
-           └─────────┬──────────┘
-              ┌──────┼──────┐
-              ▼      ▼      ▼
-         🔍 Research  💻 Coder  📝 Writer   (specialists)
-```
+![Hierarchical Agent](./images/hierarchical_agent.png)
 
 ### Characteristics
 - Task decomposition at multiple levels

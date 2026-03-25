@@ -25,13 +25,7 @@ Agents don't just react — they anticipate future states and take initiative. E
 
 ## 1.3 Agentic AI vs Traditional AI — The Spectrum
 
-```
-Static Model          Chatbot / Q&A         Pipeline / Chain        Agent
-─────────────────────────────────────────────────────────────────────────►
- (no autonomy)       (single turn)         (fixed steps)         (adaptive,
-                                                                  multi-step,
-                                                                  tool-using)
-```
+![Autonomy Spectrum](./images/autonomy_spectrum.png)
 
 | Dimension | Traditional LLM | Agentic AI |
 |---|---|---|
@@ -45,6 +39,8 @@ Static Model          Chatbot / Q&A         Pipeline / Chain        Agent
 ---
 
 ## 1.4 What Makes Something "Agentic"?
+
+![Agentic Core Concepts](./images/agentic_ai_diagram.png)
 
 An AI system is agentic when it exhibits:
 

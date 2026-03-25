@@ -8,16 +8,7 @@
 
 In 2024, Andrew Ng identified **four core agentic design patterns** that underpin virtually all production agent systems. These patterns are not mutually exclusive — the most capable agents combine all four.
 
-```
-┌─────────────────────────────────────────────────────┐
-│            FOUR AGENTIC DESIGN PATTERNS              │
-├─────────────────┬───────────────────────────────────┤
-│  1. REFLECTION  │  Agent reviews & improves output  │
-│  2. TOOL USE    │  Agent uses external capabilities │
-│  3. PLANNING    │  Agent decomposes & sequences tasks│
-│  4. MULTI-AGENT │  Multiple agents collaborate       │
-└─────────────────┴───────────────────────────────────┘
-```
+![Four Agentic Design Patterns](./images/four_agentic_patterns.png)
 
 ---
 
@@ -26,12 +17,7 @@ In 2024, Andrew Ng identified **four core agentic design patterns** that underpi
 ### What It Is
 The agent **critiques and revises its own output** in an iterative loop until quality meets a threshold.
 
-```
-Generate Output → Evaluate Quality → Is it good enough?
-       ▲              │                    │
-       │              │                   YES → Return
-       └──────────────┘ NO → Revise
-```
+![Reflection Loop](./images/reflection_loop.png)
 
 ### How It Works
 1. Agent generates an initial response
